@@ -12,7 +12,6 @@ import SafariServices
 class WeightsViewController: UIViewController {
     
     // MARK: Properties
-    let url = NSURL(string: "https://facebook.com")!
     
     // MARK: UI Elements
     let navBarView: UIView = {
@@ -64,7 +63,7 @@ class WeightsViewController: UIViewController {
     
     let overheadPressButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 250, height: 100))
-        button.tag = 1
+        button.tag = 2
         button.layer.cornerRadius = 10.0
         button.layer.shadowOpacity = 0.5
         button.layer.shadowRadius = 10.0
@@ -78,7 +77,7 @@ class WeightsViewController: UIViewController {
     
     let backButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
-        button.tag = 2
+        button.tag = 3
         button.layer.cornerRadius = 30.0
         button.layer.shadowOpacity = 0.5
         button.layer.shadowRadius = 10.0
@@ -123,8 +122,22 @@ class WeightsViewController: UIViewController {
     
     @objc func tapped(the button: UIButton) {
         // launch the camera
-        let svc = SFSafariViewController(url: url as URL)
-        present(svc, animated: true, completion: nil)
+        if button.tag == 0 {
+            // send user to bench press link
+            let url = NSURL(string: "https://facebook.com")!
+            let svc = SFSafariViewController(url: url as URL)
+            present(svc, animated: true, completion: nil)
+        } else if button.tag == 1 {
+            // send user to deadlift link
+            let url = NSURL(string: "https://facebook.com")!
+            let svc = SFSafariViewController(url: url as URL)
+            present(svc, animated: true, completion: nil)
+        } else {
+            // send user to overhead link
+            let url = NSURL(string: "https://facebook.com")!
+            let svc = SFSafariViewController(url: url as URL)
+            present(svc, animated: true, completion: nil)
+        }
     }
     
     @objc func dissmissView() {

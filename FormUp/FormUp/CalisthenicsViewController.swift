@@ -12,7 +12,6 @@ import SafariServices
 class CalisthenicsViewController: UIViewController {
     
     // MARK: Properties
-    let url = NSURL(string: "https://facebook.com")!
     
     // MARK: UI Elements
     let navBarView: UIView = {
@@ -106,8 +105,17 @@ class CalisthenicsViewController: UIViewController {
     
     @objc func tapped(the button: UIButton) {
         // launch the camera
-        let svc = SFSafariViewController(url: url as URL)
-        present(svc, animated: true, completion: nil)
+        if button.tag == 0 {
+            // send user to push ups link
+            let url = NSURL(string: "https://facebook.com")!
+            let svc = SFSafariViewController(url: url as URL)
+            present(svc, animated: true, completion: nil)
+        } else {
+            // send user to pull ups link
+            let url = NSURL(string: "https://facebook.com")!
+            let svc = SFSafariViewController(url: url as URL)
+            present(svc, animated: true, completion: nil)
+        }
     }
     
     @objc func dissmissView() {
