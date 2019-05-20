@@ -28,8 +28,8 @@ class WeightsViewController: UIViewController {
         let height = UIScreen.main.bounds.height * 0.15
         let label = UILabel(frame: CGRect(x: 0, y: 15, width: width, height: height))
         label.textAlignment = .center
-        label.text = "FORM UP"
-        label.font = .boldSystemFont(ofSize: 30)
+        label.text = "FORMUP"
+        label.font = UIFont(name: "Copperplate", size: 30)
         label.textColor = .white
         return label
     }()
@@ -100,14 +100,14 @@ class WeightsViewController: UIViewController {
     func addButtons() {
         view.addSubview(benchPressButton)
         benchPressButton.center.x = view.center.x
-        benchPressButton.center.y = view.center.y - 200
+        benchPressButton.center.y = view.center.y - 150
         
         view.addSubview(deadliftButton)
         deadliftButton.center = view.center
         
         view.addSubview(overheadPressButton)
         overheadPressButton.center.x = view.center.x
-        overheadPressButton.center.y = view.center.y + 200
+        overheadPressButton.center.y = view.center.y + 150
         
         view.addSubview(backButton)
         let height = UIScreen.main.bounds.height * 0.90

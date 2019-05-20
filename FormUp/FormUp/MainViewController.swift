@@ -27,8 +27,8 @@ class MainViewController: UIViewController {
         let height = UIScreen.main.bounds.height * 0.15
         let label = UILabel(frame: CGRect(x: 0, y: 15, width: width, height: height))
         label.textAlignment = .center
-        label.text = "FORM UP"
-        label.font = .boldSystemFont(ofSize: 30)
+        label.text = "FORMUP"
+        label.font = UIFont(name: "Copperplate", size: 30)
         label.textColor = .white
         return label
     }()
