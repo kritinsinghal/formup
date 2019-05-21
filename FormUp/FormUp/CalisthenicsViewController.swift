@@ -107,12 +107,12 @@ class CalisthenicsViewController: UIViewController {
         // launch the camera
         if button.tag == 0 {
             // send user to push ups link
-            let url = NSURL(string: "https://facebook.com")!
+            let url = NSURL(string: "https://storage.googleapis.com/tfjs-models/demos/posenet/camera.html")!
             let svc = SFSafariViewController(url: url as URL)
             present(svc, animated: true, completion: nil)
         } else {
             // send user to pull ups link
-            let url = NSURL(string: "https://facebook.com")!
+            let url = NSURL(string: "https://storage.googleapis.com/tfjs-models/demos/posenet/camera.html")!
             let svc = SFSafariViewController(url: url as URL)
             present(svc, animated: true, completion: nil)
         }

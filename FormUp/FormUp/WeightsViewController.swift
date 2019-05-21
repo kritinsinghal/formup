@@ -124,17 +124,17 @@ class WeightsViewController: UIViewController {
         // launch the camera
         if button.tag == 0 {
             // send user to bench press link
-            let url = NSURL(string: "https://facebook.com")!
+            let url = NSURL(string: "https://storage.googleapis.com/tfjs-models/demos/posenet/camera.html")!
             let svc = SFSafariViewController(url: url as URL)
             present(svc, animated: true, completion: nil)
         } else if button.tag == 1 {
             // send user to deadlift link
-            let url = NSURL(string: "https://facebook.com")!
+            let url = NSURL(string: "https://storage.googleapis.com/tfjs-models/demos/posenet/camera.html")!
             let svc = SFSafariViewController(url: url as URL)
             present(svc, animated: true, completion: nil)
         } else {
             // send user to overhead link
-            let url = NSURL(string: "https://facebook.com")!
+            let url = NSURL(string: "https://storage.googleapis.com/tfjs-models/demos/posenet/camera.html")!
             let svc = SFSafariViewController(url: url as URL)
             present(svc, animated: true, completion: nil)
         }
